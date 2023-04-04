@@ -1,18 +1,15 @@
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-right: 150px;
-    margin-left: 150px;
-    max-width: 100%;
-    height: 90vh;
+    height: 100vh;
+    width: auto;
     background-color: rgba(20, 20, 20, 0.1);
 }
 
@@ -20,39 +17,28 @@ form > h3{
     text-align: center;
     margin-bottom: 20px;
     font-size: x-large;
-    color: rgb(26, 6, 6);
+    color: rgb(0,0,0);
 }
-
+i{
+    padding-left: 8px;
+}
 .box_input {
     background-color: white;
-    max-width: 70vh;
-    height: 30px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+    margin: 5px 0;
 }
 .box_input  > input{
-   margin-left: 43px;
-   max-width: 70vh;
    outline: none;
    border: none;
-   height: 30px;
-}
-.icon1{
-    margin-left: 10px;
-    margin-top: -23px;
-    width: 80px;
-    height: 90px;
+   padding: 8px;
 }
 
-button{
-    background-color: red;
-    color: white;
-    width: 50vh;
-    height: 30px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+button {
     border: none;
     font-weight: bolder;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    width: 100%;
 }
 
 button:hover {
@@ -60,21 +46,9 @@ button:hover {
     background-color: #ff4040;
 }
 
-@media only screen and (max-width: 678px) {
-
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        margin-right: 20px;
-        margin-left: 20px;
-        max-width: 90vh;
-        height: 90vh;
-        background-color: rgba(20, 20, 20, 0.1);
-    }
-    button{
-        width: 40vh;
-    }
-    
+p {
+    color: red;
+    display: none;
+    display: block;
+    flex-wrap: wrap;
 }
