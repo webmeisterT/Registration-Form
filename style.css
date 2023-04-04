@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    /* background-color: gray; */
-}
+
 .container{
     display: flex;
     justify-content: center;
@@ -15,26 +13,26 @@ body {
     margin-left: 150px;
     max-width: 100%;
     height: 90vh;
-    background-color: gray;
+    background-color: rgba(20, 20, 20, 0.1);
 }
 
 form > h3{
     text-align: center;
     margin-bottom: 20px;
-    font-size: xx-large;
-    color: white;
+    font-size: x-large;
+    color: rgb(26, 6, 6);
 }
 
 .box_input {
     background-color: white;
-    width: 270px;
+    max-width: 70vh;
     height: 30px;
     margin-bottom: 10px;
     border-radius: 10px;
 }
 .box_input  > input{
    margin-left: 43px;
-   width: 210px;
+   max-width: 70vh;
    outline: none;
    border: none;
    height: 30px;
@@ -47,37 +45,33 @@ form > h3{
 }
 
 button{
-    background-color: green;
+    background-color: red;
     color: white;
-    width: 270px;
-    height: 40px;
+    width: 50vh;
+    height: 30px;
     margin-bottom: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: none;
+    font-weight: bolder;
 }
 
-@media screen and (max-width: 768px) and (min-width: 365px) {
-    body{
-        background-color: white;
-        align-items: center;
-        justify-content: center;
-    }
+button:hover {
+    cursor: pointer;
+    background-color: #ff4040;
+}
+
+@media only screen and (max-width: 678px) {
+
     .container{
         display: flex;
-        align-items: center;
         justify-content: center;
-    }
-    .image{
-        display: none;
-    }
-    h3{
-        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        max-width: 100vh;
+        height: 90vh;
+        background-color: rgba(20, 20, 20, 0.1);
     }
     
-.fom{
-   margin-top: 60px;
-   margin-left: 0px;
-   margin-right: 40px;
-}
-
 }
