@@ -1,6 +1,6 @@
 let firstname = document.getElementById('firstname')
 let middlename = document.getElementById('middlename')
-let lastname = document.getElementById('lastname')
+let lastname = document.getElementById('lastname').document.write()
 let email = document.getElementById('email')
 let passwd = document.getElementById('passwd')
 let passwd2 = document.getElementById('passwd2')
@@ -12,7 +12,7 @@ form.addEventListener('submit', e => {
     let specialCharacters = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/
     // Trim and get values of the HTML element
     let passwdT = passwd.value.trim()
-    let passwd2T = passwd.value.trim()
+    let passwd2T = passwd2.value.trim()
     let emailT = email.value.trim()
     
     // check for email validity
